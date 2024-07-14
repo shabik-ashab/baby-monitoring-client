@@ -1,11 +1,12 @@
-import MonitoringBtn from "./components/MonitoringBtn"
+import MonitoringSystem from "./components/MonitoringSystem"
+
 
 
 function App() {
 
   return (
     <>
-      <MonitoringBtn />
+      <MonitoringSystem/>
     </>
   )
 }
