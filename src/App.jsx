@@ -2,7 +2,7 @@ import MonitoringSystem from "./components/MonitoringSystem"
 
 
 
-function App() {
+const App = () => {
 
   return (
     <>
