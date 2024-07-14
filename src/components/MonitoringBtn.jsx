@@ -1,9 +1,10 @@
-import React from 'react'
 
-const MonitoringBtn = () => {
-  return (
-    <button className="btn btn-neutral">Neutral</button>
-  )
-}
+// =========== MonitoringBtn ==========
 
-export default MonitoringBtn
+const MonitoringBtn = ({openMonitor, setOpenMonitor}) => {
+    return (
+        <button className="btn btn-neutral" onClick={() => setOpenMonitor(!openMonitor)}>Start Monitoring</button>
+    );
+};
+
+export default MonitoringBtn;
