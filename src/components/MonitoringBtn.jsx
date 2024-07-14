@@ -76,15 +76,15 @@ function App() {
 
       {
         openMonitor ?  
-        <div className='flex m-20 gap-20'>
-          <video ref={videoRef} autoPlay muted width="720" height="560" />
-          <canvas ref={canvasRef} width="720" height="560" style={{ display: 'none' }} />
-         <Feed/>
+        <div className='flex lg:flex-row flex-col m-20 gap-20'>
+          <video className='rounded-[20px]' ref={videoRef} autoPlay muted width="720" height="560" />
+          <canvas className='rounded-[20px]' ref={canvasRef} width="720" height="560" style={{ display: 'none' }} />
+         <Feed openMonitor={openMonitor} setOpenMonitor={setImageData}/>
         </div>
         : 
         <div className='h-[100vh] flex justify-center items-center'>
 
-        <button className="btn btn-neutral " onClick={() => setOpenMonitor(!openMonitor)}>Start Monitoring</button>
+        <button className="btn btn-neutral" onClick={() => setOpenMonitor(!openMonitor)}>Start Monitoring</button>
       </div>
 
 
