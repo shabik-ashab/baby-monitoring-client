@@ -48,13 +48,15 @@ const Canvas = () => {
   }, [imageData]);
 
   const sendImageToBackend = async (imageData) => {
-    console.log(imageData)
+    console.log(imageData);
 
     try {
-        const response = await axios.post('http://localhost:5000/upload-image', { image: imageData });
-        console.log('Image uploaded successfully:', response.data);
+      const response = await axios.post("http://localhost:5000/upload-image", {
+        image: imageData,
+      });
+      console.log("Image uploaded successfully:", response.data);
     } catch (error) {
-        console.error('Error uploading image:', error);
+      console.error("Error uploading image:", error);
     }
   };
   return (
