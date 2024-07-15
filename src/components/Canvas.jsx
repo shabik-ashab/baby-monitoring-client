@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-
+import axios from "axios";
 
 const Canvas = () => {
 
@@ -66,8 +66,8 @@ const Canvas = () => {
     };
     return (
         <div>
-             <video className='rounded-[20px]' ref={videoRef} autoPlay muted width="720" height="360" />
-             <canvas className='rounded-[20px]' ref={canvasRef} width="720" height="360" style={{ display: 'none' }} />
+             <video className='rounded-[20px]' ref={videoRef} autoPlay muted width="720" height="560" />
+             <canvas className='rounded-[20px]' ref={canvasRef} width="720" height="560" style={{ display: 'none' }} />
         </div>
     );
 };
