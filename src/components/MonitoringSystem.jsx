@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Feed from './Feed';
 import Canvas from './Canvas';
 import MonitoringBtn from './MonitoringBtn';
+import StopMonitoring from './StopMonitoring';
 
 const MonitoringSystem = () => {
 
@@ -9,19 +10,24 @@ const MonitoringSystem = () => {
 
 
   return (
-    <div className="">
+    <div className='bg-slate-950 lg:h-[100vh] h-full'>
 
 
 
       {
         openMonitor ?
-          <div className='flex lg:flex-row flex-col justify-evenly m-20 gap-20'>
+          <div className='flex lg:flex-row flex-col justify-evenly p-20 gap-20'>
 
-            {/* =============== Canvas =============  */}
+            <div>
+              {/* =============== Canvas =============  */}
 
-            <Canvas openMonitor={openMonitor} setOpenMonitor={setOpenMonitor} />
+              <Canvas openMonitor={openMonitor} setOpenMonitor={setOpenMonitor} />
 
-            {/* =============== Canvas =============  */}
+
+              {/* =============== Canvas =============  */}
+
+             
+            </div>
 
             {/* =============== Feed =============  */}
 
@@ -29,6 +35,8 @@ const MonitoringSystem = () => {
             <Feed openMonitor={openMonitor} setOpenMonitor={setOpenMonitor} />
 
             {/* =============== Feed =============  */}
+
+
           </div>
           :
           <div className='h-[100vh] flex justify-center items-center'>
