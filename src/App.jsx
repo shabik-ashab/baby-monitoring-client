@@ -1,12 +1,11 @@
-import MonitoringSystem from "./components/MonitoringSystem"
-
+import Layout from "./Layout/Layout"
 
 
 const App = () => {
 
   return (
     <>
-      <MonitoringSystem/>
+      <Layout/>
     </>
   )
 }
