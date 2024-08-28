@@ -1,9 +1,10 @@
+import MonitoringSystem from '@/components/MonitoringSystem'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-        hello
+       <MonitoringSystem />
     </div>
   )
 }
