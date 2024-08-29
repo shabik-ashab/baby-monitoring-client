@@ -12,7 +12,7 @@ const H1 = ({title}) => {
        },[])
     return (
         <div>
-            <h2 data-aos="fade-down" className='text-4xl font-semibold pb-8'>{title}</h2>
+            <h2 data-aos="fade-down" className='text-4xl font-semibold pb-4'>{title}</h2>
         </div>
     );
 };
