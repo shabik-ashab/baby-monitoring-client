@@ -1,58 +1,49 @@
-import image from "../../Assats/babybanner.jpg";
-import image1 from "../../Assats/babybanner.jpg";
-import image2 from "../../Assats/babybanner.jpg";
-import image3 from "../../Assats/babybanner.jpg";
+import image from "../../Assats/yusra.jpg";
+import image1 from "../../Assats/profile1.png";
+import image2 from "../../Assats/shuvo.jpg";
+import image3 from "../../Assats/shabik.png";
 
 const Teams = () => {
-    return (
-                <div className="py-16 h-[100vh] flex items-center">
-                <div className="container text-center">
-                <h2 className="text-4xl font-semibold text-bold w-full text-white text-center mb-2">Our Teams</h2>
-                  <div className="flex justify-center mb-10">
-                  <div className="bg-primary w-20 h-1 rounded border-primary flex justify-center"></div>
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 px-5 lg:grid-cols-4 items-center justify-center gap-6 lg:mx-20">
-                   <div className="h-fit lg:w-80 md:w-80 w-90 group">
-                    <div className="relative overflow-hidden">
-                   <img className="lg:w-80 md:w-80 w-90" src={image} alt="" />
-                   <div className="absolute w-full h-full transition-all flex items-center justify-center duration-300 hover:top-0 right-0 top-40 bg-blue-950/85 opacity-0 hover:opacity-100">
-                    <h2 className="text-2xl font-semibold text-blue-white">Name</h2>
-                    {/* Team Details */}
-                   </div>
-                    </div>
-                   </div>
-                   <div className="h-fit lg:w-80 md:w-80 w-90 group">
-                    <div className="relative overflow-hidden">
-                   <img className="lg:w-80 md:w-80 w-90" src={image1} alt="" />
-                   <div className="absolute w-full h-full transition-all flex flex-col items-center justify-center duration-300 hover:top-0 right-0 top-40 bg-blue-950/85 opacity-0 hover:opacity-100">
-                    <h2 className="text-2xl font-semibold text-blue-white">Hiramon Nahar Eva</h2>
-                    <h2 className="text-[18px] font-semibold text-blue-white">hiramonnahareva@gmail.com</h2>
-                    {/* Team Details */}
-                   </div>
-                    </div>
-                   </div>
-                   <div className="h-fit lg:w-80 md:w-80 w-90 group">
-                    <div className="relative overflow-hidden">
-                   <img className="lg:w-80 md:w-80 w-90" src={image2} alt="" />
-                   <div className="absolute w-full h-full transition-all flex items-center justify-center duration-300 hover:top-0 right-0 top-40 bg-blue-950/85 opacity-0 hover:opacity-100">
-                    <h2 className="text-2xl font-semibold text-blue-white">Name</h2>
-                    {/* Team Details */}
-                   </div>
-                    </div>
-                   </div>
-                   <div className="h-fit lg:w-80 md:w-80 w-90 group">
-                    <div className="relative overflow-hidden">
-                   <img className="lg:w-80 md:w-80 w-90" src={image3} alt="" />
-                   <div className="absolute w-full h-full transition-all flex items-center justify-center duration-300 hover:top-0 right-0 top-40 bg-blue-950/85 opacity-0 hover:opacity-100">
-                    <h2 className="text-2xl font-semibold text-blue-white">Name</h2>
-                    {/* Team Details */}
-                   </div>
-                    </div>
-                   </div>
-                  </div>
+  return (
+    <div className="min-h-screen flex items-center justify-center py-12">
+      <div className="w-full max-w-7xl mx-auto px-4">
+        <h2 className="text-4xl font-semibold text-white text-center mb-2">
+          Our Teams
+        </h2>
+        <div className="flex justify-center mb-10">
+          <div className="bg-primary w-20 h-1 rounded"></div>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          {[
+            { img: image, name: "Yousra Amin", email: " yousraamin654@gmail.com" },
+            { img: image1, name: "Hiramon Nahar Eva", email: "hiramonnahareva@gmail.com" },
+            { img: image2, name: "Sk Shafiqul Islam Shuvo", email: "skshafiqulislamshuvo@gmail.com" },
+            { img: image3, name: "Sayed Shabik Ashab", email: "shabik.ashab@gmail.com" },
+          ].map((member, index) => (
+            <div key={index} className="group">
+              <div className="relative h-64 sm:h-72 overflow-hidden rounded-lg">
+                <img 
+                  className="h-full w-full object-cover object-center transition-transform duration-300 ease-in-out group-hover:scale-110" 
+                  src={member.img} 
+                  alt={member.name} 
+                />
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-blue-950/85 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100">
+                  <h2 className="text-2xl font-semibold text-white transform translate-y-4 transition-transform duration-300 group-hover:translate-y-0">
+                    {member.name}
+                  </h2>
+                  {member.email && (
+                    <h3 className="text-sm font-semibold text-white mt-2 opacity-0 transform translate-y-4 transition-all duration-300 delay-100 group-hover:opacity-100 group-hover:translate-y-0">
+                      {member.email}
+                    </h3>
+                  )}
                 </div>
               </div>
-    );
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Teams;

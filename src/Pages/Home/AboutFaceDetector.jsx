@@ -6,7 +6,7 @@ const AboutFaceDetector = () => {
     return (
         <div>
             <H1 title="What is CradleCam?"/>
-            <div className="flex justify-center pb-36 pt-10">
+            <div className="flex justify-center pb-36 pt-14">
             <ReactVideo/>
             </div>
         </div>
