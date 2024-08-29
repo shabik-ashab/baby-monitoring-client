@@ -18,7 +18,7 @@ const Menu = () => {
                     <li className="my-4 py-4 border-b border-slate-950 hover:bg-slate-800 hover:rounded">Monitoring</li>
                 </Link>
                 <Link to="our_teams">
-                    <li className="my-4 py-4 border-b border-slate-950 hover:bg-slate-800 hover:rounded">Our Teams</li>
+                    <li className="my-4 py-4 border-b border-slate-950 hover:bg-slate-800 hover:rounded">Our Team</li>
                 </Link>
             </ul>
         </div>
@@ -39,7 +39,7 @@ const Menu = () => {
                     <li className="hover:text-primary transition border-b-2 border-slate-950 hover:border-primary cursor-pointer">Monitoring</li>
                 </Link>
                 <Link to="our_teams">
-                    <li className="hover:text-primary transition border-b-2 border-slate-950 hover:border-primary cursor-pointer">Our Teams</li>
+                    <li className="hover:text-primary transition border-b-2 border-slate-950 hover:border-primary cursor-pointer">Our Team</li>
                 </Link>
             </ul>
                     </div>

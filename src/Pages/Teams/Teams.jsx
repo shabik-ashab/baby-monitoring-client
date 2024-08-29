@@ -8,7 +8,7 @@ const Teams = () => {
     <div className="min-h-screen flex items-center justify-center py-12">
       <div className="w-full max-w-7xl mx-auto px-4">
         <h2 className="text-4xl font-semibold text-white text-center mb-2">
-          Our Teams
+          Our Team
         </h2>
         <div className="flex justify-center mb-10">
           <div className="bg-primary w-20 h-1 rounded"></div>
