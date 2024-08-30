@@ -1,6 +1,6 @@
 # CradleCam: The Digital Nanny
 
-[![Monitoring Baby Face](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID "Monitoring Baby Face - YouTube")
+[![Monitoring Baby Face](https://img.youtube.com/vi/LXsvZwiu6Mo/0.jpg)](https://www.youtube.com/watch?v=LXsvZwiu6Mo "Monitoring Baby Face - YouTube")
 
 CradleCam is a web-based application that monitors babies through a live webcam feed, analyzing emotions and alerting caregivers to potential distress.
 
