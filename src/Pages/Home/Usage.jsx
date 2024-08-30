@@ -6,7 +6,7 @@ import { MdOutlineArrowRightAlt } from 'react-icons/md';
 
 const Usage = () => {
     return (
-        <div>
+        <div className='h-screen'>
             <H1 title="How to use it?" />
             <div className='flex lg:flex-row flex-col justify-evenly items-center my-20'>
             <div className='flex flex-col items-start'>
