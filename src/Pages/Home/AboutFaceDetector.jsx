@@ -4,7 +4,7 @@ import ReactVideo from "../../components/ReactVideo";
 
 const AboutFaceDetector = () => {
     return (
-        <div>
+        <div className="h-screen">
             <H1 title="What is CradleCam?"/>
             <div className="flex justify-center pb-36 pt-14">
             <ReactVideo/>
