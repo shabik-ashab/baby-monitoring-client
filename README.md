@@ -20,7 +20,7 @@ CradleCam is a web-based application that monitors babies through a live webcam 
 
 1. Clone the repository:
    ```
-   git clone https://github.com/sheikhshuv/CradleCam.git
+   git clone git@github.com:shabik-ashab/baby-monitoring-client.git
    ```
 2. Navigate to the project directory:
    ```
