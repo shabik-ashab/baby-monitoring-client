@@ -1,6 +1,6 @@
 import H1 from '../../components/H1';
-import Screenshot1 from '../../Assats/Screenshot1.png'
-import Screenshot2 from '../../Assats/Screenshot2.png'
+import Screenshot1 from '../../Assets/Screenshot1.png'
+import Screenshot2 from '../../Assets/Screenshot2.png'
 import { MdOutlineArrowRightAlt } from 'react-icons/md';
 
 
