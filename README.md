@@ -30,10 +30,6 @@ CradleCam is a web-based application that monitors babies through a live webcam 
    ```
    npm install
    ```
-4. Run Locally
-   ```
-   npm run dev
-   ```
 
 ## Running Locally
 
