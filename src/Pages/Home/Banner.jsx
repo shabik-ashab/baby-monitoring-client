@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import H1 from "../../components/H1";
-import image from '../../Assats/babybanner.jpg';
+import image from '../../Assets/babybanner.jpg';
 import ExploreNow from "../../components/ExploreNow";
 import Aos from "aos";
 import 'aos/dist/aos.css';

@@ -1,7 +1,8 @@
-import image from "../../Assats/yusra.jpg";
-import image1 from "../../Assats/profile1.png";
-import image2 from "../../Assats/shuvo.jpg";
-import image3 from "../../Assats/shabik.png";
+import image from "../../Assets/yusra.jpg";
+import image1 from "../../Assets/profile1.png";
+import image2 from "../../Assets/shuvo.jpg";
+import image3 from "../../Assets/shabik.png";
+import { MdOutgoingMail } from "react-icons/md";
 
 const Teams = () => {
   return (
@@ -32,9 +33,7 @@ const Teams = () => {
                     {member.name}
                   </h2>
                   {member.email && (
-                    <h3 className="text-sm font-semibold text-white mt-2 opacity-0 transform translate-y-4 transition-all duration-300 delay-100 group-hover:opacity-100 group-hover:translate-y-0">
-                      {member.email}
-                    </h3>
+                      <a className="text-4xl font-semibold text-white mt-2 opacity-0 transform translate-y-4 transition-all duration-300 delay-100 group-hover:opacity-100 group-hover:translate-y-0" href={`mailto:${member.email}`}> <MdOutgoingMail /> </a>
                   )}
                 </div>
               </div>
