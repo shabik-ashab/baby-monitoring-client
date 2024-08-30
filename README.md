@@ -24,11 +24,15 @@ CradleCam is a web-based application that monitors babies through a live webcam 
    ```
 2. Navigate to the project directory:
    ```
-   cd CradleCam
+   cd baby-monitoring-client
    ```
 3. Install dependencies:
    ```
    npm install
+   ```
+4. Run Locally
+   ```
+   npm run dev
    ```
 
 ## Running Locally
